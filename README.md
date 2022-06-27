@@ -1,29 +1,18 @@
 MEAN Stack Sample Application 
 This is a simple CRUD application built using MEAN Stack. 
 
+Run with docker-compose file 
 
-Run Manually:
+1. Set ATLAS_URI parameter in .env file of server
+	
+   ATLAS_URI=mongodb://localhost:27017/mean-stack-example
 
-1. Run mongodb in a docker container
- 
- 	docker pull mongo
+   (Change localhost to db i.e service name of database in docker-compose file)
+   
+   ATLAS_URI=mongodb://db:27017/mean-stack-example
 
-	docker run -d -p 27017:27017  --name mongotest mongo:latest 
+2. Run docker-compose file to start all containers:
 
-2. Set ATLAS_URI paramter in .env file of server
-
-	ATLAS_URI=mongodb://localhost:27017/mean-stack-example  
-
-3. Run Server
-
-	cd server
-	npm install
-	npm start
-
-4. Run Client 
-
-	cd client
-	npm install
-	npm start
+   command : docker-compose up -d
 
 When both applications are running, open your browser on http://localhost:4200/.
