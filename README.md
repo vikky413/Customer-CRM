@@ -5,18 +5,15 @@ This is a simple CRUD application built using the MEAN (MongoDB, Express, Angula
 ![Demonstration of the web application](demo.gif)
 
 ## How To Run
-Run mongodb in a docker container
- 
- ```
- docker pull mongo
- docker run -d -p 27017:27017  --name mongotest mongo:latest
-```
- 
+
  Set your [Atlas URI connection string](https://docs.atlas.mongodb.com/getting-started/) as a parameter in `server/.env`.
 
 ```
 ATLAS_URI=mongodb://localhost:27017/mean-stack-example
 ```
+
+Note: Before starting the application, make sure mongo service is running locally on port 27017. If not check in windows services or start it explicitly with command prompt. Refer [this](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/) for more information.
+
 
 Start the server application:
 ```
