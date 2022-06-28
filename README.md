@@ -17,8 +17,8 @@ Run mongodb in a docker container
 ```
 ATLAS_URI=mongodb://<VM IP>:27017/mean-stack-example
 ```
-## Note
-To get VM IP, Go to Settings-> Network -> Wired Setting -> Copy IPv4 Address
+Note :To get VM IP, Go to Settings-> Network -> Wired Setting -> Copy IPv4 Address
+
 
 Start the Client & Server applications with Dockerfile:
 ```
